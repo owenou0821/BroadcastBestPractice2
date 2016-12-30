@@ -18,6 +18,7 @@ public class ActivityCollector {
         activityList.add(activity);
     }
 
+
     public  static void removeActivity(Activity activity){
         activityList.remove(activity);
     }
@@ -26,6 +27,7 @@ public class ActivityCollector {
         Iterator<Activity> it = activityList.iterator();
         while (it.hasNext())
         {
+            int b = 0;
             Activity activity = it.next();
             if (!activity.isFinishing()){
                 activity.finish();

@@ -45,5 +45,6 @@ public class LoginActivity extends BasicActivity {
         Intent intent = new Intent(activity, LoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent);
+        int a = 2;
     }
 }
