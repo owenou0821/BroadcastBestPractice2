@@ -52,6 +52,8 @@ public class MainActivity extends BasicActivity {
         Intent intent = new Intent(activity,MainActivity.class);
         activity.startActivity(intent);
         activity.finish();
+
+
     }
 
     class ForceOfflineBroadcastReceiver extends BroadcastReceiver{
@@ -70,6 +72,8 @@ public class MainActivity extends BasicActivity {
 //                    Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
 //                    intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //                    startActivity(intent1);
+
+
                 }
             });
             AlertDialog dialog = alertDialog.create();
