@@ -66,10 +66,10 @@ public class MainActivity extends BasicActivity {
                 public void onClick(DialogInterface dialog, int which) {
                     ActivityCollector.allFinish();
                     Toast.makeText(MainActivity.this, "Relogin", Toast.LENGTH_LONG).show();
-                    LoginActivity.toLoginActivity(MainActivity.this);
-//                    Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
-//                    intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                    context.startActivity(intent1);
+//                    LoginActivity.toLoginActivity(MainActivity.this);
+                    Intent intent1 = new Intent(MainActivity.this, LoginActivity.class);
+                    intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(intent1);
                 }
             });
             AlertDialog dialog = alertDialog.create();
